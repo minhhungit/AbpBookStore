@@ -52,6 +52,18 @@
                     data: "name"
                 },
                 {
+                    title: l('Author'),
+                    data: "authorName"
+                },
+
+                {
+                    title: l('Type'),
+                    data: "type",
+                    render: function (data) {
+                        return l('Enum:BookType:' + data);
+                    }
+                },
+                {
                     title: l('Type'),
                     data: "type",
                     render: function (data) {
